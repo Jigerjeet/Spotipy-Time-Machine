@@ -1,0 +1,60 @@
+🌟 Feature Details
+1. 🎨 Branded GUI Interface
+Built with Tkinter, styled in Spotify’s signature green.
+
+Uses custom fonts and emojis for a friendly, modern look.
+
+Includes input fields, buttons, and dynamic status updates.
+
+2. 📅 Date Validation
+Accepts user input in YYYY-MM-DD format.
+
+Uses regex to validate the date before proceeding.
+
+Prevents errors and guides users with clear feedback.
+
+3. 🕵️ Billboard Chart Scraper
+Automates Chrome using Selenium to visit Billboard’s Hot 100 chart.
+
+Extracts song titles using BeautifulSoup and CSS selectors.
+
+Handles loading delays with timed waits or conditional checks.
+
+4. 🔐 Spotify Authentication
+Uses Spotipy with OAuth2 to securely access the user’s Spotify account.
+
+Requests permission to create private playlists and add tracks.
+
+5. 🔍 Song Search & Matching
+Searches each Billboard song on Spotify using Spotipy’s search API.
+
+Collects track URIs for songs that are available.
+
+Skips and logs any songs not found on Spotify.
+
+6. 📁 Playlist Creation
+Automatically creates a private playlist named after the selected date.
+
+Adds all matched songs to the playlist in one batch.
+
+Confirms success with a status update in the GUI.
+
+7. 🎧 Spotify Launcher
+Includes a button to open the Spotify app using AppOpener.
+
+Enhances convenience and encourages immediate listening.
+
+8. ❌ Exit Button
+Allows users to close the app cleanly with a single click.
+
+Improves usability and control.
+
+9. ✅ Real-Time Status Feedback
+Displays messages like “Fetching Billboard data…” or “Playlist created!”.
+
+Uses color-coded text to indicate progress, success, or errors.
+
+10. 🧠 Error Handling & Logging
+Catches invalid input, missing songs, and browser issues.
+
+Prints helpful messages to the console for debugging.
