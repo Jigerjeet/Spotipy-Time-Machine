@@ -43,8 +43,8 @@ def billboard(x):
 
 
 def spotify(x):
-    client_id = "3bc5647679b344c0a99ed1abc9f3016f"
-    client_secret = "f4ea658ac3334cefaa5bf6ed135b99f1"
+    client_id = "Enter your client_id"
+    client_secret = "Enter your secret code"
 
     sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=client_id, client_secret=client_secret,
                                                    redirect_uri="https://open.spotify.com/",
@@ -116,6 +116,7 @@ button3.pack(pady=5)
 # Status Label
 status_label = tk.Label(root, text="", bg="#1DB954", fg="white", font=label_font)
 status_label.pack(pady=(10, 0))
+
 
 
 root.mainloop()
